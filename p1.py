@@ -1,22 +1,12 @@
-class Library:
-    def __init__(self):
-        self.books = []
+class Student:
+    def __init__(self, name, roll_no):
+        self.name = name
+        self.roll_no = roll_no
 
-    def add_book(self, book_name):
-        self.books.append(book_name)
-        print(f"Book '{book_name}' added successfully.")
-
-    def show_books(self):
-        if not self.books:
-            print("No books available.")
-        else:
-            print("Available Books:")
-            for book in self.books:
-                print("-", book)
+    def display(self):
+        print(f"Name: {self.name}, Roll No: {self.roll_no}")
 
 
-# Sample usage
-lib = Library()
-lib.add_book("Python Programming")
-lib.add_book("Data Structures")
-lib.show_books()
+# Initial student
+s1 = Student("Madesh", 101)
+s1.display()
