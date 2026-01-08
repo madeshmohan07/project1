@@ -1,6 +1,8 @@
-<<<<<<< HEAD
-print("Student Module Updated")
-=======
-print("Student Module Modified by Teammate")
->>>>>>> feature-branch
-print("Student Registration Module Updated")
+def write_log():
+    file = open("app.log", "w")
+    file.write("Application started successfully\n")
+    file.close()
+    print("Log file created")
+
+
+write_log()
