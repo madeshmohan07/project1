@@ -1,13 +1,13 @@
-class Student:
-    def __init__(self, name, roll_no):
-        self.name = name
-        self.roll_no = roll_no
+class Login:
+    def __init__(self):
+        self.users = {"admin": "1234"}
 
-    def display(self):
-        print(f"Name: {self.name}, Roll No: {self.roll_no}")
+    def authenticate(self, username, password):
+        if username in self.users and self.users[username] == password:
+            print("Login Successful")
+        else:
+            print("Invalid Credentials")
 
 
-# Initial student
-s1 = Student("Madesh", 101)
-s1.display()
-1 
+login = Login()
+login.authenticate("admin", "1234")
