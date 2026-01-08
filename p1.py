@@ -1,13 +1,18 @@
-class Student:
-    def __init__(self, name, roll_no):
-        self.name = name
-        self.roll_no = roll_no
+# ATM Withdrawal Program
 
-    def display(self):
-        print(f"Name: {self.name}, Roll No: {self.roll_no}")
+balance = 10000  # initial balance
 
+print("Welcome to ATM")
+print("Available Balance:", balance)
 
-# Initial student
-s1 = Student("Madesh", 101)
-s1.display()
-1 
+amount = int(input("Enter withdrawal amount: "))
+
+# Check conditions
+if amount % 100 != 0:
+    print("Error: Withdrawal amount must be a multiple of 100")
+elif amount > balance:
+    print("Error: Insufficient balance")
+else:
+    balance = balance - amount
+    print("Withdrawal successful")
+    print("Updated Balance:", balance)
