@@ -1,2 +1,6 @@
-print("Team member updated the project")
-print("Latest changes pulled successfully")
+def release():
+    print("Library Management System")
+    print("Version 1.0")
+    print("Final Project Released Successfully")
+
+release()
