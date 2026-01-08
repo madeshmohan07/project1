@@ -10,3 +10,4 @@ class Student:
 # Initial student
 s1 = Student("Madesh", 101)
 s1.display()
+1 
